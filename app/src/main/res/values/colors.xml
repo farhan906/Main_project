@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#128C7E</color> <!-- Primary color (toolbar background) -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Primary color (toolbar background) -->
     <color name="light_gray">#F2F2F2</color> <!-- Light gray background color -->
     <color name="white">#FFFFFF</color> <!-- White color -->
 </resources>
