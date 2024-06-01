@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <!-- DOUCLEAR title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOUCLEAR"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- 3-dot vertical option menu -->
+        <ImageView
+            android:id="@+id/menu_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/menu"
+            android:padding="8dp"
+            android:contentDescription="Options"
+            android:layout_marginEnd="16dp"
+            android:onClick="showOptionsPopupMenu"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Search button -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/toolbar"
+        android:text="Search Experts"
+        android:textColor="@color/white"
+        android:backgroundTint="#806F6F"/>
+
+
+    <!-- List of experts or chats -->
+    <ListView
+        android:id="@+id/listViewChats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonSearch"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>

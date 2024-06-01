@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Toolbar title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expert Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name EditText -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <!-- Gender EditText -->
+            <EditText
+                android:id="@+id/editTextGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender" />
+
+            <!-- Age EditText -->
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <!-- Field of Expertise EditText -->
+            <EditText
+                android:id="@+id/editTextExpertise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Field of Expertise" />
+
+            <!-- Qualifications EditText -->
+            <EditText
+                android:id="@+id/editTextQualifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qualifications" />
+
+            <!-- Remarks EditText -->
+            <EditText
+                android:id="@+id/editTextRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Remarks" />
+
+            <!-- Location EditText -->
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
